@@ -1,0 +1,2 @@
+custom_msgs
+-DCATKIN_DEVEL_PREFIX=/home/ketgintern/Desktop/FMS-AGV-AMR/robot_server/ros/devel -DCMAKE_INSTALL_PREFIX=/home/ketgintern/Desktop/FMS-AGV-AMR/robot_server/ros/install -G Unix Makefiles

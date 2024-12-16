@@ -1,0 +1,35 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.7.8",
+    "chart.js": "^3.9.1",
+    "concurrently": "^8.2.2",
+    "gsap": "^3.12.5",
+    "lodash": "^4.17.21",
+    "node-cron": "^3.0.3",
+    "priorityqueuejs": "^2.0.0",
+    "react": "^18.3.1",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "roslib": "^1.4.1",
+    "rosnodejs": "^3.1.0",
+    "sharp": "^0.33.5",
+    "ws": "^8.18.0"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others-on-fail \"npm run start-account-server\" \"npm run start-map-server\" \"npm run start-monitor-server\" \"npm run start-robot-server\" \"npm run start-task-server\"",
+    "start-account-server": "cd account_server && npm start",
+    "start-map-server": "cd map_server && npm start",
+    "start-monitor-server": "cd monitor_server && npm start",
+    "start-robot-server": "cd robot_server && npm start",
+    "start-task-server": "cd task_server && npm start"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0"
+  }
+}
